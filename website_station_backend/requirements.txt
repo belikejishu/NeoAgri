@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+onnxruntime
+pillow
+numpy
+torchvision
+python-multipart
+pybluez2
+requests

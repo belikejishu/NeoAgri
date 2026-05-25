@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package offlinesync;
+
+message LeafCapture {
+  string capture_id = 1;
+  double latitude = 2;
+  double longitude = 3;
+  string timestamp_utc = 4; // ISO-8601 UTC
+  bytes leaf_image = 5; // Cropped leaf image bytes (JPEG preferred)
+}
+
+message LeafCaptureEnvelope {
+  string schema_version = 1; // "1.0"
+  string type = 2; // "leaf_capture"
+  LeafCapture payload = 3;
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/leaf-capture-payload.json",
+  "title": "LeafCaptureEnvelope",
+  "type": "object",
+  "required": ["schema_version", "type", "payload"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "type": {
+      "type": "string",
+      "const": "leaf_capture"
+    },
+    "payload": {
+      "type": "object",
+      "required": [
+        "capture_id",
+        "latitude",
+        "longitude",
+        "timestamp_utc",
+        "leaf_image_b64"
+      ],
+      "properties": {
+        "capture_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "timestamp_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "leaf_image_b64": {
+          "type": "string",
+          "contentEncoding": "base64",
+          "description": "Base64 encoded cropped leaf image in JPEG format"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

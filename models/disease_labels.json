@@ -1,0 +1,30 @@
+{
+  "0": {
+    "index": 0,
+    "folder_name": "Caterpillar and Semilooper Pest Attack",
+    "disease": "Caterpillar & Semilooper Pest Attack",
+    "cure": "Apply Chlorpyrifos 20 EC @ 2ml per litre of water. Spray during evening hours. Remove heavily infested leaves.",
+    "severity": "High"
+  },
+  "1": {
+    "index": 1,
+    "folder_name": "Healthy_Soyabean",
+    "disease": "Healthy",
+    "cure": null,
+    "severity": "None"
+  },
+  "2": {
+    "index": 2,
+    "folder_name": "Soyabean_Frog_Leaf_Eye",
+    "disease": "Frog Eye Leaf Spot",
+    "cure": "Apply Carbendazim 50 WP @ 1g per litre. Remove and destroy infected leaves. Avoid overhead irrigation.",
+    "severity": "Medium"
+  },
+  "3": {
+    "index": 3,
+    "folder_name": "Soyabean_Spectoria_Brown_Spot",
+    "disease": "Septoria Brown Spot",
+    "cure": "Apply Mancozeb 75 WP @ 2g per litre of water every 10 days. Improve field drainage.",
+    "severity": "Medium"
+  }
+}
